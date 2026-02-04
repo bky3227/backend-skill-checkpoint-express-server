@@ -1,10 +1,10 @@
 // Create PostgreSQL Connection Pool here !
-import * as pg from "pg";
-const { Pool } = pg.default;
+import pkg from "pg";
+const { Pool } = pkg;
 
 const connectionPool = new Pool({
   connectionString:
-    "postgresql://your-db-username:your-db-password@localhost:5432/your-db-name",
+    "postgresql://postgres:Thanapol10@localhost:5432/backend-skill-checkpoint",
 });
 
 export default connectionPool;
